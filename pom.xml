@@ -12,6 +12,8 @@
         <module>1-linked-list</module>
         <module>2-stack</module>
         <module>3-queue</module>
+        <module>4-recursive</module>
+        <module>5-sort</module>
     </modules>
 
     <name>datastructs-and-algorithm</name>
