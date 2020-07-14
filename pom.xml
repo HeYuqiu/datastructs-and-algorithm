@@ -14,6 +14,7 @@
         <module>3-queue</module>
         <module>4-recursive</module>
         <module>5-sort</module>
+        <module>6-binary-search</module>
     </modules>
 
     <name>datastructs-and-algorithm</name>
