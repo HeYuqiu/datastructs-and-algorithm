@@ -12,7 +12,9 @@ public class P4QuickSort {
     public static void main(String[] args) {
         int[] a = {4, 2, 5, 1, 6, 3, 4, 7, 8, 9, 11, 3, 23, 8, 10, 25, 11, 2, 19};
         sort(a);
-        System.out.println(a);
+        for (int i : a) {
+            System.out.println(i);
+        }
     }
 
     public static void sort(int[] a) {
@@ -31,7 +33,7 @@ public class P4QuickSort {
     private static int partition(int[] a, int left, int right) {
         // 以left作为基准值
         int pivot = left;
-        int index = pivot + 1;
+        int index = left + 1;
         for (int i = index; i <= right; i++) {
             if (a[i] < a[pivot]) {
                 swap(a, index, i);

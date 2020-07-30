@@ -1,5 +1,11 @@
 import model.ListNode;
 
+import java.util.Date;
+import java.util.HashMap;
+import java.util.LinkedHashMap;
+import java.util.Map;
+import java.util.concurrent.TimeUnit;
+
 /**
  * 如何用链表实现LRU缓存淘汰算法
  * 指导思想:
@@ -16,7 +22,22 @@ import model.ListNode;
 public class Problem6LRU {
     ListNode listNode;
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
+        Date d = new Date();
+        TimeUnit.SECONDS.sleep(1);
+        long countdown = new Date().getTime() - d.getTime();
+
+        HashMap<Integer,Integer> hashMap =new HashMap();
+        hashMap.put(3,4);
+        hashMap.put(2,2);
+        hashMap.put(6,1);
+        hashMap.put(1,7);
+        hashMap.put(11,7);
+        hashMap.put(5,7);
+        hashMap.put(4,7);
+        for (Map.Entry entry : hashMap.entrySet()) {
+            System.out.println(entry.getKey());
+        }
 
     }
 }

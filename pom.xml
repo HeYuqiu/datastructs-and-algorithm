@@ -15,6 +15,7 @@
         <module>4-recursive</module>
         <module>5-sort</module>
         <module>6-binary-search</module>
+        <module>7-binary-tree</module>
     </modules>
 
     <name>datastructs-and-algorithm</name>
