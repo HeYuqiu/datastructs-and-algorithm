@@ -17,6 +17,7 @@
         <module>6-binary-search</module>
         <module>7-binary-tree</module>
         <module>x-homework</module>
+        <module>x-exercises-nowcoder</module>
     </modules>
 
     <name>datastructs-and-algorithm</name>
