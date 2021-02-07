@@ -19,6 +19,8 @@
         <module>x-homework</module>
         <module>x-exercises-nowcoder</module>
         <module>x-jzoffer</module>
+        <module>8-回溯算法</module>
+        <module>9-贪心算法</module>
     </modules>
 
     <name>datastructs-and-algorithm</name>
