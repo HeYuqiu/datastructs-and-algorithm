@@ -21,6 +21,7 @@
         <module>x-jzoffer</module>
         <module>8-回溯算法</module>
         <module>9-贪心算法</module>
+        <module>10-动态规划</module>
     </modules>
 
     <name>datastructs-and-algorithm</name>
