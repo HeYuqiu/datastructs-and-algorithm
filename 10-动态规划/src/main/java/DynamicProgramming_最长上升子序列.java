@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 /**
  * 给你一个整数数组 nums ，找到其中最长严格递增子序列的长度。
  *
@@ -9,18 +11,19 @@
 public class DynamicProgramming_最长上升子序列 {
     public int lengthOfLIS(int[] nums) {
         int[] dp = new int[nums.length];
-        for (int i : dp) {
-            i = 1;
-        }
-        int maxans = 1;
+        Arrays.fill(dp, 1);
         for (int i = 1; i < nums.length; i++) {
             for (int j = 0; j < i; j++) {
                 if (nums[j] < nums[i]) {
                     dp[i] = Math.max(dp[i], dp[j] + 1);
                 }
             }
-            maxans = Math.max(maxans, dp[i]);
         }
-        return maxans;
+
+        int res = 0;
+        for (int i = 0; i < nums.length; i++) {
+            res = Math.max(res, dp[i]);
+        }
+        return res;
     }
 }
